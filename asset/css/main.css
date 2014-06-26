@@ -1,0 +1,477 @@
+/* 
+
+text color: white
+text size: 
+-h1: 4.2em;
+body text: 1.3em;
+
+;
+
+*/
+
+
+/*---------------------
+Global-GENERAL
+-----------------------*/
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	margin-top:60px;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+span.menu-title-small {
+	position: fixed;
+	top: 13px;
+	left: 30px;
+	color: white;
+	font-size: 1.5em;
+}
+/*-----social-links icons----*/
+
+.facebook:before {
+	content: "\f082";
+}
+.twitter:before { 
+	content: "\f081";
+
+}
+.facebook:before,
+.twitter:before {
+	color: #FF1818;
+	font-family: 'FontAwesome';
+	font-size: 1.5625em; /*25px*/
+	padding: 0 8px;
+}
+
+/*---------------------
+NAVIGATION -Global-
+-----------------------*/
+
+.fixed-navigation {
+	width: 100%;
+	height: 60px;
+	background-color: #111;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+div#menu {
+	float: right;
+	padding-right: 25px;
+	padding-top: 15px;
+}
+
+div#menu .toggle-menu > li {
+	font-size: 1.4375em;/*23px*/
+	display: inline-block;
+	padding: 0 15px;
+	letter-spacing: -0.333px;
+}
+
+div.social-links {
+	float: left;
+	padding-top: 15px;
+	padding-left: 38px;
+
+}
+
+#nav {
+	width: 100%;
+}
+
+#nav > a {
+	display: none;
+}
+
+#nav li a {
+	color: #fff;
+	display: block;
+}
+
+#nav li a:active {
+	color: #FF1818;
+}
+
+
+/* first level */
+
+#nav > ul {
+	height: 3.75em; /* 60 */
+	background-color: #111;
+}
+	
+#nav > ul > li {
+	height: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+#nav > ul > li > a 	{
+	height: 100%;
+	font-size: 1.5em; /* 24 */
+	line-height: 2.5em; /* 60 (24) */
+	padding: 0 20px;
+
+
+}
+		
+#nav > ul > li:hover > a,
+#nav > ul:not( :hover ) > li.active > a {
+
+	color: #FF1818;
+}
+
+
+
+/*--------------------------
+HOMEPAGE -Global-
+--------------------------*/
+.sound-switch {
+background: transparent;
+position: fixed;
+top: 60px;
+left: 38px;
+width: 100%;
+height: 30px;
+}
+
+.sound-switch > p {
+	background: transparent;
+	display: inline-block;
+	padding-bottom: 5px;
+	margin-right: 5px;
+}
+
+div.sound-switch #sound-on:hover,
+div.sound-switch #sound-off:hover{
+	border-bottom: solid 2px #FF1818; 
+	cursor: pointer;
+}
+
+.homepage {
+
+	background: url('../img/bg-placeholder.jpg') no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+img.logo {
+	margin: 50px 38px; 
+}
+
+div.notice-wrapper {
+
+	position:absolute;
+	right: 2%;
+	top: 10%;
+	width: 245px;
+}
+
+div.noticeboard {
+	background-color: #fff;
+	border: 5px solid #000;
+	width: 100%;
+	height: 110px;
+	padding: 10px 15px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.container > div.notice-wrapper div.noticeboard:nth-child(1) {
+	margin-bottom: 20px;
+	height: 130px;
+	}
+div.noticeboard:nth-child(2) {
+	height: 80px;
+}
+
+
+div.noticeboard > p {
+	color: #1A1A1A;
+	}
+div.noticeboard > h3 > a {
+	color: #FF1818;
+	}
+
+div.noticeboard.trailer {
+	line-height: 1;
+}
+
+
+
+
+
+
+/*--------------------------
+LEGAL -Global-
+---------------------------*/
+
+
+nav#legal {
+width: 100%;
+height: 50px;
+background-color: #1a1a1a;
+font-size: 0.8em;
+font-weight: lighter;
+}
+
+nav#legal .box {
+	width: 100%;
+	padding-top: 15px;
+	padding-left: 30px;
+}
+
+nav#legal span.divider::after {
+	content: "  |";
+
+}
+
+nav#legal span.divider {
+	color: #e6e6e6;
+}
+
+
+/*640px ENDS*/
+
+
+@media screen and (max-width: 768px) {
+
+/*---------------------
+Homepage
+-----------------------*/
+	.homepage 	  {	background:none; }
+	.social-links { display: none;}
+	.sound-switch { display: none;}
+	.logo 		  { width: 35%;	}
+
+	div.container.homepage div.noticeboard.trailer { display: none;}
+	
+	#responsive-video {
+		width:100%; 
+		height:50%;
+		position: absolute;
+		bottom: 50px;
+	}
+
+	#responsive-video iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+/*---------------------
+NAVIGATION
+-----------------------*/
+	#nav > a {
+		width: 100%; 
+		height: 3.75em; /* 50 */
+		background-color: #111;
+		color: #000;
+	}
+		
+	#nav > a > span {
+		color: white;
+		font-size: 1.5em;
+		line-height: 2.5em;
+		padding-right: 30px;
+		float: right;
+	}
+
+	#nav > a > span:hover {
+		color: #FF1818;
+	}
+
+	#nav:not( :target ) > a:first-of-type,
+	#nav:target > a:last-of-type {
+		display: block;
+	}
+
+
+	
+/* first level */
+
+	#nav > ul{
+		height: auto;
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		background-color: #B70000;
+	}
+
+	#nav:target > ul {
+		display: block;
+
+	}
+
+	#nav > ul > li 	{
+		width: 100%;
+		float: none;
+	}
+
+	#nav > ul > li > a	{
+		height: auto;
+		text-align: center;
+	}
+
+	#nav > ul > li > a {
+		border-right: none;
+		border-bottom: 4px solid #111;
+	}
+
+	#nav > ul > li:first-child > a {
+		border-top: 2px solid #111; 
+	}
+	
+	#nav > ul > li:hover > a,
+	#nav > ul:not( :hover ) > li.active > a {
+
+	background-color: #FF1818;
+	color: #111;
+	}
+
+
+
+
+/*--------------------------
+LEGAL  768
+---------------------------*/
+
+ 	nav#legal {
+		text-align: center;
+		height: 50%;
+		min-height: 34em;
+		padding: 5.625em 0;
+		box-sizing: border-box;
+		
+	}
+	#legal > div.box {
+		padding: 0;
+	}
+
+	
+
+	nav#legal span {
+		display: block;
+		line-height: 2;
+		font-size: 1.25em; /*20px*/
+
+	}
+	
+	.social-links-mobile {
+		padding-bottom: 20px;
+	}
+	
+	nav#legal span.divider::after {
+	content: " "
+	}
+
+	.facebook:before,
+	.twitter:before {
+		padding: 0 14px;
+		font-size: 3.09375em;
+	}
+			
+	
+
+
+}
+/*------media query starts--------*/
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+
+
+}
+
+
+/*------media query starts--------*/
+
+
+
+
+@media screen and (min-width:769px) {
+
+	.social-links-mobile { display: none;}
+	#responsive-video {display: none;}
+
+	nav#legal > p {
+		display: inline-block;
+	}	
+
+	nav#legal p:after  {
+		content: " |" ;
+	}
+
+	div.character {
+		max-height:527px; 
+		max-width:256px;
+	}
+	span.menu-title-small {
+		display: none;
+	}
+
+
+
+
+}
+
+
+@media screen and (min-width: 1280px){
+
+
+	#character-container {
+		min-height: 800px;
+	}
+
+	div.char-wrapper {
+		width: 95%;
+		height: 100%;
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+
+	div.character {
+		max-width: none;
+		
+	}
+
+	div.char-titles {
+		margin-top: 372px;
+	}
+
+
+}
+
+
+
+
+/*CLEARFIX*/
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

@@ -1,0 +1,161 @@
+
+/*---------------------
+CHARACTERS - Global
+-----------------------*/
+
+
+#character-container {
+	background: url('../img/brick-bg-character.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+
+div.char-wrapper {
+	width: 100%;
+	max-width: 1280px;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 110px; /*1024*/ 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.marv  { background:url('../img/marv-character.jpg')   no-repeat center center ;}
+div.ava   { background:url('../img/ava-character.jpg')    no-repeat center center ;} /*256px X 527px*/
+div.jonny { background:url('../img/jonny-character.jpg')  no-repeat center center ;}
+div.nancy { background:url('../img/nancy-character.jpg')  no-repeat center center ;}
+div.dwight{ background:url('../img/dwight-character.jpg') no-repeat center center ;} 
+
+div.marv,  
+div.ava,   
+div.jonny, 
+div.nancy, 
+div.dwight {
+
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+
+}
+
+div.char-titles {
+	margin-top: 150%; /*380px*/  367px
+	font-size: 0.875em;/*14px*/
+	/*margin-top: 150px;*/
+}
+
+div.char-titles h1, 
+div.char-titles p {
+	text-align: center;
+}
+
+div.char-titles > h1{
+	font-size: 3.5em; 	
+	font-weight: normal;
+	margin: 0 auto;
+	color: #FF1818;
+}
+
+
+div.char-titles p:nth-child(2) {
+	font-size: 1em; /*16px*/
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+	#character-container {
+		background: none;
+		max-height: 830px;
+	}
+
+	div.char-wrapper {
+		padding: 0;
+		width: 100%;
+		margin: 0 auto; 
+	}
+
+
+	div.marv  { background:url('../img/marv-char-mobile.jpg')   no-repeat center center ;}
+	div.ava   { background:url('../img/ava-char-mobile.jpg')    no-repeat center center ;} /*256px X 527px*/
+	div.jonny { background:url('../img/jonny-char-mobile.jpg')  no-repeat center center ;}
+	div.nancy { background:url('../img/nancy-char-mobile.jpg')  no-repeat center center ;}
+	div.dwight{ background:url('../img/dwight-char-mobile.jpg') no-repeat center center ;} 
+
+	div.marv,  
+	div.ava,   
+	div.jonny, 
+	div.nancy, 
+	div.dwight {
+
+		height: 20%;
+		width: 100%;
+		/*min-width:640px;*/
+		min-height: 100px;
+		max-height: 166px;
+		display: block;
+		float: none;
+
+	}
+
+	div.char-titles {
+		margin: 0;
+		bottom: 10px;
+		margin-left: 20px;
+	}
+
+	div.char-titles h1, 
+	div.char-titles p {
+		text-align: left;
+	}
+
+	div.char-titles > h1 {
+		font-size: 2.8em; 	
+	}
+
+	div.char-titles p:nth-child(2) {
+		font-size: 1.2em; /*16px*/
+	}
+
+	div.char-titles p:nth-child(3) {
+		display: none;
+	}	
+
+
+}
+
+@media screen and (min-width: 1280px){
+
+
+	#character-container {
+		min-height: 800px;
+	}
+
+	div.char-wrapper {
+		width: 95%;
+		height: 100%;
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+
+	div.character {
+		max-width: none;
+		
+	}
+
+	div.char-titles {
+		margin-top: 372px;
+	}
+
+
+}

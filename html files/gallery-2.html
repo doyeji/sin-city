@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>Gallery|Frank Miller | Sin city : A dame to kill for</title>
+    <link rel="stylesheet" type="text/css" href="asset/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/main.css">
+      <link rel="stylesheet" type="text/css" href="asset/css/carousel.css">
+</head>
+
+
+
+<body>
+<nav class="fixed-navigation">
+    <div class="social-links">
+        <a href="" class="facebook"></a>
+        <a href="" class="twitter"></a>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="characters.html">characters</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="tikets.html" target="_blank">tickets</a></li>
+    </ul>
+</nav>
+<!-- put navigation php include here -->
+    <div class="sound-switch">
+        <p>sound</p>
+        <p id="sound-on">on</p>
+        <p id="sound-off">off</p>
+
+    </div>
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('asset/img/marv-lg.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1>MARV</h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('asset/img/dwight-lg.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1>Dwight</h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('asset/img/jonny-lg.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1>Jonny</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+
+ 
+
+    <!-- JavaScript -->
+    <script src="asset/js/jquery-1.10.2.js"></script>
+    <script src="asset/js/carousel.js"></script>
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+</body>
+
+</html>
